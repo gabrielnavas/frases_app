@@ -1,7 +1,5 @@
 import React from 'react'
-import getOnePhraseRandom from '../../../service/get-one-phrase-random'
-
-import theme from '../../common/Theme/theme'
+import getOnePhraseRandom from '../services/get-one-phrase-random'
 
 import {
   Container,
@@ -29,21 +27,19 @@ const ShowOnePhrase = () => {
 
   return (
     <Container>
-      <Wrapper>
-        <Body>
-          <Phrase>{phrase}</Phrase>
-        </Body>
-        <Footer>
-          <ButtonNextPhrase 
-            max
-            onPress={handleNewPhrase}>
-            <ButtonTextNextPhrase>
-              Proxima frase
-              </ButtonTextNextPhrase>
-            <IconNextPhrase />
-          </ButtonNextPhrase>
-        </Footer>
-      </Wrapper>
+      <Body>
+        <Phrase>{phrase}</Phrase>
+      </Body>
+      <Footer>
+        <ButtonNextPhrase 
+          max
+          onPress={handleNewPhrase}>
+          <ButtonTextNextPhrase>
+            Proxima frase
+            </ButtonTextNextPhrase>
+          <IconNextPhrase />
+        </ButtonNextPhrase>
+      </Footer>
     </Container>
   )
 }

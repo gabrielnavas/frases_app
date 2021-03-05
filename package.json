@@ -21,8 +21,18 @@
     "@babel/core": "~7.9.0"
   },
   "private": true,
-  "android": {
-    "package": "com.navas.frases",
-    "versionCode": 1
-  }
+  "expo": {
+    "name": "Frases Bonitas",
+    "icon": "./assets/icon.png",
+    "version": "1.0.0",
+    "slug": "frases-app",
+    "ios": {
+      "bundleIdentifier": "com.navas.frases",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "com.navas.frases",
+      "versionCode": 1
+    }
+   }
 }
